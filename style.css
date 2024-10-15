@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+}
+
+  
+
+.wrapper {
+  color: white;
+  background-color: #2b2b2b;
+  padding: 50px 100px;
+  margin-top: 50px;
+  width: 750px;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
+
+.wrapper h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  
+}
+
+input {
+  color: white;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+}
+
+input::placeholder {
+  color: #ffffff76;
+}
+
+input:focus {
+  outline: none;
+}
+
+.todo-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 38px;
+  border: none;
+  background-color: #6c63ff;
+  border-radius: 4px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6c63ff;
+  width: 50px;
+  height: 38px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn1:hover,
+.btn2:hover {
+  opacity: 0.5;
+}
+
+.btn1:active,
+.btn2:active {
+  transform: scale(0.9);
+}
+
+.todo-body {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.todo-item {
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 520px;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item input {
+  width: 20px;
+}
+
+.item p {
+  width: 400px;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.chiziq {
+  text-decoration: line-through;
+}
+
+/* Light mode  */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+.dark-mode {
+  background-color: #0e0e0e;
+  
+}
+
+.dark-mode h1,
+.dark-mode input,
+.dark-mode p {
+  color: white;
+}
+
